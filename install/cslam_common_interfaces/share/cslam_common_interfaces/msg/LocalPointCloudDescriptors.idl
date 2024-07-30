@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cslam_common_interfaces/msg/LocalPointCloudDescriptors.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/PointCloud2.idl"
+
+module cslam_common_interfaces {
+  module msg {
+    struct LocalPointCloudDescriptors {
+      uint32 keyframe_id;
+
+      uint32 robot_id;
+
+      sequence<uint32> matches_robot_id;
+
+      sequence<uint32> matches_keyframe_id;
+
+      sensor_msgs::msg::PointCloud2 data;
+    };
+  };
+};

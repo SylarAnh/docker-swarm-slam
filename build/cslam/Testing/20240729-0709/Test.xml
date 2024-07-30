@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20240729-0709-Experimental"
+	Name="jcwang"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.4.0"
+	OSName="Linux"
+	Hostname="jcwang"
+	OSRelease="5.15.0-117-generic"
+	OSVersion="#127~20.04.1-Ubuntu SMP Thu Jul 11 15:36:12 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="151"
+	ProcessorCacheSize="30720"
+	NumberOfLogicalCPU="24"
+	NumberOfPhysicalCPU="16"
+	TotalVirtualMemory="17672"
+	TotalPhysicalMemory="31903"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="3200"
+	>
+	<Testing>
+		<StartDateTime>Jul 29 15:09 CST</StartDateTime>
+		<StartTestTime>1722236983</StartTestTime>
+		<TestList>
+			<Test>./test_algebraic_connectivity</Test>
+			<Test>./test_sparse_matching</Test>
+			<Test>./test_broker</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>test_algebraic_connectivity</Name>
+			<Path>.</Path>
+			<FullName>./test_algebraic_connectivity</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/ws_code/build/cslam/test_results/cslam/test_algebraic_connectivity.xunit.xml" "--package-name" "cslam" "--output-file" "/ws_code/build/cslam/ament_cmake_pytest/test_algebraic_connectivity.txt" "--append-env" "PYTHONPATH=/ws_code/build/cslam" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/ws_code/src/src/cslam/tests/test_algebraic_connectivity.py" "-o" "cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_algebraic_connectivity/.cache" "--junit-xml=/ws_code/build/cslam/test_results/cslam/test_algebraic_connectivity.xunit.xml" "--junit-prefix=cslam"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>2</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>1.28538</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/ws_code/build/cslam/test_results/cslam/test_algebraic_connectivity.xunit.xml" "--package-name" "cslam" "--output-file" "/ws_code/build/cslam/ament_cmake_pytest/test_algebraic_connectivity.txt" "--append-env" "PYTHONPATH=/ws_code/build/cslam" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/ws_code/src/src/cslam/tests/test_algebraic_connectivity.py" "-o" "cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_algebraic_connectivity/.cache" "--junit-xml=/ws_code/build/cslam/test_results/cslam/test_algebraic_connectivity.xunit.xml" "--junit-prefix=cslam"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: extra environment variables to append:
+ - PYTHONPATH+=/ws_code/build/cslam
+-- run_test.py: invoking following command in '/ws_code/src/src/cslam':
+ - /usr/bin/python3 -u -m pytest /ws_code/src/src/cslam/tests/test_algebraic_connectivity.py -o cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_algebraic_connectivity/.cache --junit-xml=/ws_code/build/cslam/test_results/cslam/test_algebraic_connectivity.xunit.xml --junit-prefix=cslam
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+cachedir: /ws_code/build/cslam/ament_cmake_pytest/test_algebraic_connectivity/.cache
+rootdir: /ws_code/src/src/cslam
+plugins: launch-testing-0.10.10, ament-xmllint-0.9.8, ament-copyright-0.9.8, launch-testing-ros-0.11.7, ament-pep257-0.9.8, ament-lint-0.9.8, ament-flake8-0.9.8, anyio-4.4.0, colcon-core-0.12.1
+collected 0 items / 1 errors
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting test session _________________________
+/usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:83: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+/usr/lib/python3/dist-packages/_pytest/python.py:187: in pytest_collect_file
+    return ihook.pytest_pycollect_makemodule(path=path, parent=parent)
+/usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:83: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+/opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:188: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:181: in find_launch_test_entrypoint
+    module = path.pyimport()
+/usr/lib/python3/dist-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+/usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:304: in load_module
+    exec(co, mod.__dict__)
+tests/test_algebraic_connectivity.py:6: in &lt;module&gt;
+    from cslam.algebraic_connectivity_maximization import AlgebraicConnectivityMaximization, EdgeInterRobot
+cslam/algebraic_connectivity_maximization.py:5: in &lt;module&gt;
+    from cslam.mac.mac import MAC
+cslam/mac/mac.py:13: in &lt;module&gt;
+    from cslam.mac.utils import *
+cslam/mac/utils.py:9: in &lt;module&gt;
+    import numba
+/usr/local/lib/python3.8/dist-packages/numba/__init__.py:55: in &lt;module&gt;
+    _ensure_critical_deps()
+/usr/local/lib/python3.8/dist-packages/numba/__init__.py:40: in _ensure_critical_deps
+    raise ImportError(msg)
+E   ImportError: Numba needs NumPy 1.22 or greater. Got NumPy 1.17.
+=============================== warnings summary ===============================
+cslam/mac/mac.py:133
+cslam/mac/mac.py:150
+cslam/mac/mac.py:169
+cslam/mac/mac.py:192
+  Warning: invalid escape sequence \i
+
+/usr/local/lib/python3.8/dist-packages/scipy/__init__.py:143
+  Warning: A NumPy version &gt;=1.19.5 and &lt;1.27.0 is required for this version of SciPy (detected version 1.17.4)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+- generated xml file: /ws_code/build/cslam/test_results/cslam/test_algebraic_connectivity.xunit.xml -
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
+===================== 5 warnings, 1 error in 0.43 seconds ======================
+-- run_test.py: return code 2
+-- run_test.py: verify result file '/ws_code/build/cslam/test_results/cslam/test_algebraic_connectivity.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>pytest</Label>
+			</Labels>
+		</Test>
+		<Test Status="failed">
+			<Name>test_sparse_matching</Name>
+			<Path>.</Path>
+			<FullName>./test_sparse_matching</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/ws_code/build/cslam/test_results/cslam/test_sparse_matching.xunit.xml" "--package-name" "cslam" "--output-file" "/ws_code/build/cslam/ament_cmake_pytest/test_sparse_matching.txt" "--append-env" "PYTHONPATH=/ws_code/build/cslam" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/ws_code/src/src/cslam/tests/test_sparse_matching.py" "-o" "cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_sparse_matching/.cache" "--junit-xml=/ws_code/build/cslam/test_results/cslam/test_sparse_matching.xunit.xml" "--junit-prefix=cslam"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>2</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.842851</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/ws_code/build/cslam/test_results/cslam/test_sparse_matching.xunit.xml" "--package-name" "cslam" "--output-file" "/ws_code/build/cslam/ament_cmake_pytest/test_sparse_matching.txt" "--append-env" "PYTHONPATH=/ws_code/build/cslam" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/ws_code/src/src/cslam/tests/test_sparse_matching.py" "-o" "cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_sparse_matching/.cache" "--junit-xml=/ws_code/build/cslam/test_results/cslam/test_sparse_matching.xunit.xml" "--junit-prefix=cslam"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: extra environment variables to append:
+ - PYTHONPATH+=/ws_code/build/cslam
+-- run_test.py: invoking following command in '/ws_code/src/src/cslam':
+ - /usr/bin/python3 -u -m pytest /ws_code/src/src/cslam/tests/test_sparse_matching.py -o cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_sparse_matching/.cache --junit-xml=/ws_code/build/cslam/test_results/cslam/test_sparse_matching.xunit.xml --junit-prefix=cslam
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+cachedir: /ws_code/build/cslam/ament_cmake_pytest/test_sparse_matching/.cache
+rootdir: /ws_code/src/src/cslam
+plugins: launch-testing-0.10.10, ament-xmllint-0.9.8, ament-copyright-0.9.8, launch-testing-ros-0.11.7, ament-pep257-0.9.8, ament-lint-0.9.8, ament-flake8-0.9.8, anyio-4.4.0, colcon-core-0.12.1
+collected 0 items / 1 errors
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting test session _________________________
+/usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:83: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+/usr/lib/python3/dist-packages/_pytest/python.py:187: in pytest_collect_file
+    return ihook.pytest_pycollect_makemodule(path=path, parent=parent)
+/usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:83: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+/opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:188: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:181: in find_launch_test_entrypoint
+    module = path.pyimport()
+/usr/lib/python3/dist-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+/usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:304: in load_module
+    exec(co, mod.__dict__)
+tests/test_sparse_matching.py:3: in &lt;module&gt;
+    from cslam.loop_closure_sparse_matching import LoopClosureSparseMatching
+cslam/loop_closure_sparse_matching.py:4: in &lt;module&gt;
+    from cslam.algebraic_connectivity_maximization import AlgebraicConnectivityMaximization, EdgeInterRobot
+cslam/algebraic_connectivity_maximization.py:5: in &lt;module&gt;
+    from cslam.mac.mac import MAC
+cslam/mac/mac.py:13: in &lt;module&gt;
+    from cslam.mac.utils import *
+cslam/mac/utils.py:9: in &lt;module&gt;
+    import numba
+/usr/local/lib/python3.8/dist-packages/numba/__init__.py:55: in &lt;module&gt;
+    _ensure_critical_deps()
+/usr/local/lib/python3.8/dist-packages/numba/__init__.py:40: in _ensure_critical_deps
+    raise ImportError(msg)
+E   ImportError: Numba needs NumPy 1.22 or greater. Got NumPy 1.17.
+=============================== warnings summary ===============================
+/usr/local/lib/python3.8/dist-packages/scipy/__init__.py:143
+  Warning: A NumPy version &gt;=1.19.5 and &lt;1.27.0 is required for this version of SciPy (detected version 1.17.4)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+- generated xml file: /ws_code/build/cslam/test_results/cslam/test_sparse_matching.xunit.xml -
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
+===================== 1 warnings, 1 error in 0.35 seconds ======================
+-- run_test.py: return code 2
+-- run_test.py: verify result file '/ws_code/build/cslam/test_results/cslam/test_sparse_matching.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>pytest</Label>
+			</Labels>
+		</Test>
+		<Test Status="failed">
+			<Name>test_broker</Name>
+			<Path>.</Path>
+			<FullName>./test_broker</FullName>
+			<FullCommandLine>/usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml" "--package-name" "cslam" "--output-file" "/ws_code/build/cslam/ament_cmake_pytest/test_broker.txt" "--append-env" "PYTHONPATH=/ws_code/build/cslam" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/ws_code/src/src/cslam/tests/test_broker.py" "-o" "cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_broker/.cache" "--junit-xml=/ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml" "--junit-prefix=cslam"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>2</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.812631</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3 "-u" "/opt/ros/foxy/share/ament_cmake_test/cmake/run_test.py" "/ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml" "--package-name" "cslam" "--output-file" "/ws_code/build/cslam/ament_cmake_pytest/test_broker.txt" "--append-env" "PYTHONPATH=/ws_code/build/cslam" "--command" "/usr/bin/python3" "-u" "-m" "pytest" "/ws_code/src/src/cslam/tests/test_broker.py" "-o" "cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_broker/.cache" "--junit-xml=/ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml" "--junit-prefix=cslam"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: extra environment variables to append:
+ - PYTHONPATH+=/ws_code/build/cslam
+-- run_test.py: invoking following command in '/ws_code/src/src/cslam':
+ - /usr/bin/python3 -u -m pytest /ws_code/src/src/cslam/tests/test_broker.py -o cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_broker/.cache --junit-xml=/ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml --junit-prefix=cslam
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+cachedir: /ws_code/build/cslam/ament_cmake_pytest/test_broker/.cache
+rootdir: /ws_code/src/src/cslam
+plugins: launch-testing-0.10.10, ament-xmllint-0.9.8, ament-copyright-0.9.8, launch-testing-ros-0.11.7, ament-pep257-0.9.8, ament-lint-0.9.8, ament-flake8-0.9.8, anyio-4.4.0, colcon-core-0.12.1
+collected 0 items / 1 errors
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting test session _________________________
+/usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:83: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+/usr/lib/python3/dist-packages/_pytest/python.py:187: in pytest_collect_file
+    return ihook.pytest_pycollect_makemodule(path=path, parent=parent)
+/usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:83: in &lt;lambda&gt;
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+/opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:188: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:181: in find_launch_test_entrypoint
+    module = path.pyimport()
+/usr/lib/python3/dist-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+/usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:304: in load_module
+    exec(co, mod.__dict__)
+tests/test_broker.py:3: in &lt;module&gt;
+    from cslam.broker import Broker
+cslam/broker.py:2: in &lt;module&gt;
+    from cslam.algebraic_connectivity_maximization import EdgeInterRobot
+cslam/algebraic_connectivity_maximization.py:5: in &lt;module&gt;
+    from cslam.mac.mac import MAC
+cslam/mac/mac.py:13: in &lt;module&gt;
+    from cslam.mac.utils import *
+cslam/mac/utils.py:9: in &lt;module&gt;
+    import numba
+/usr/local/lib/python3.8/dist-packages/numba/__init__.py:55: in &lt;module&gt;
+    _ensure_critical_deps()
+/usr/local/lib/python3.8/dist-packages/numba/__init__.py:40: in _ensure_critical_deps
+    raise ImportError(msg)
+E   ImportError: Numba needs NumPy 1.22 or greater. Got NumPy 1.17.
+=============================== warnings summary ===============================
+/usr/local/lib/python3.8/dist-packages/scipy/__init__.py:143
+  Warning: A NumPy version &gt;=1.19.5 and &lt;1.27.0 is required for this version of SciPy (detected version 1.17.4)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+- generated xml file: /ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml -
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
+===================== 1 warnings, 1 error in 0.32 seconds ======================
+-- run_test.py: return code 2
+-- run_test.py: verify result file '/ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>pytest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Jul 29 15:09 CST</EndDateTime>
+		<EndTestTime>1722236986</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

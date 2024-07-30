@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cslam_common_interfaces/msg/InterRobotLoopClosure.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Transform.idl"
+
+module cslam_common_interfaces {
+  module msg {
+    struct InterRobotLoopClosure {
+      uint32 robot0_keyframe_id;
+
+      uint32 robot0_id;
+
+      uint32 robot1_keyframe_id;
+
+      uint32 robot1_id;
+
+      boolean success;
+
+      geometry_msgs::msg::Transform transform;
+    };
+  };
+};

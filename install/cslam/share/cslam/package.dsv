@@ -1,0 +1,11 @@
+source;share/cslam/hook/cmake_prefix_path.ps1
+source;share/cslam/hook/cmake_prefix_path.dsv
+source;share/cslam/hook/cmake_prefix_path.sh
+source;share/cslam/hook/pythonpath.ps1
+source;share/cslam/hook/pythonpath.dsv
+source;share/cslam/hook/pythonpath.sh
+source;share/cslam/local_setup.bash
+source;share/cslam/local_setup.dsv
+source;share/cslam/local_setup.ps1
+source;share/cslam/local_setup.sh
+source;share/cslam/local_setup.zsh

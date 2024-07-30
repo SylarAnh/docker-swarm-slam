@@ -1,0 +1,7 @@
+test_algebraic_connectivity 0 0
+test_sparse_matching 0 0
+test_broker 0 0
+---
+test_algebraic_connectivity
+test_sparse_matching
+test_broker

@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cslam_common_interfaces/msg/GlobalDescriptors.msg
+// generated code does not contain a copyright notice
+
+#include "cslam_common_interfaces/msg/GlobalDescriptor.idl"
+
+module cslam_common_interfaces {
+  module msg {
+    struct GlobalDescriptors {
+      sequence<cslam_common_interfaces::msg::GlobalDescriptor> descriptors;
+    };
+  };
+};

@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cslam_common_interfaces/msg/VizPointCloud.msg
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/PointCloud2.idl"
+
+module cslam_common_interfaces {
+  module msg {
+    struct VizPointCloud {
+      uint32 robot_id;
+
+      uint32 keyframe_id;
+
+      sensor_msgs::msg::PointCloud2 pointcloud;
+    };
+  };
+};

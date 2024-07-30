@@ -1,0 +1,3 @@
+source;share/cslam/environment/ament_prefix_path.sh
+source;share/cslam/environment/path.sh
+source;share/cslam/environment/pythonpath.sh

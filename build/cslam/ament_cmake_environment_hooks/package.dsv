@@ -1,0 +1,4 @@
+source;share/cslam/local_setup.bash
+source;share/cslam/local_setup.dsv
+source;share/cslam/local_setup.sh
+source;share/cslam/local_setup.zsh

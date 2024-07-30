@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cslam_common_interfaces/msg/MultiRobotKey.msg
+// generated code does not contain a copyright notice
+
+
+module cslam_common_interfaces {
+  module msg {
+    struct MultiRobotKey {
+      uint32 robot_id;
+
+      uint32 keyframe_id;
+    };
+  };
+};

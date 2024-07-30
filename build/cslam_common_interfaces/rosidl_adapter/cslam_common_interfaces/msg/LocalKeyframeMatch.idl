@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cslam_common_interfaces/msg/LocalKeyframeMatch.msg
+// generated code does not contain a copyright notice
+
+
+module cslam_common_interfaces {
+  module msg {
+    struct LocalKeyframeMatch {
+      uint32 keyframe0_id;
+
+      uint32 keyframe1_id;
+    };
+  };
+};

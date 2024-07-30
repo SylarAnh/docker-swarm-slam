@@ -1,0 +1,47 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from cslam_common_interfaces/msg/PoseGraph.msg
+// generated code does not contain a copyright notice
+
+#include "cslam_common_interfaces/msg/InterRobotMatches.idl"
+#include "cslam_common_interfaces/msg/PoseGraphEdge.idl"
+#include "cslam_common_interfaces/msg/PoseGraphValue.idl"
+#include "cslam_common_interfaces/msg/RobotIds.idl"
+#include "sensor_msgs/msg/NavSatFix.idl"
+
+module cslam_common_interfaces {
+  module msg {
+    struct PoseGraph {
+      uint32 robot_id;
+
+      uint32 origin_robot_id;
+
+      cslam_common_interfaces::msg::RobotIds connected_robots;
+
+      sequence<cslam_common_interfaces::msg::PoseGraphEdge> edges;
+
+      sequence<cslam_common_interfaces::msg::PoseGraphValue> values;
+
+      @verbatim (language="comment", text=
+        " The following fields are for logging purposes only" "\n"
+        " and should be left empty otherwise." "\n"
+        " They are not used by the CSLAM system.")
+      sequence<uint32> gps_values_idx;
+
+      sequence<sensor_msgs::msg::NavSatFix> gps_values;
+
+      uint32 nb_matches;
+
+      uint32 nb_failed_matches;
+
+      uint32 nb_vertices_transmitted;
+
+      uint32 nb_matches_selected;
+
+      uint64 front_end_cumulative_communication_bytes;
+
+      double sparsification_cumulative_computation_time;
+
+      cslam_common_interfaces::msg::InterRobotMatches spectral_matches;
+    };
+  };
+};

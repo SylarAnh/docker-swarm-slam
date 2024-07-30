@@ -1,0 +1,63 @@
+-- run_test.py: extra environment variables to append:
+ - PYTHONPATH+=/ws_code/build/cslam
+-- run_test.py: invoking following command in '/ws_code/src/src/cslam':
+ - /usr/bin/python3 -u -m pytest /ws_code/src/src/cslam/tests/test_broker.py -o cache_dir=/ws_code/build/cslam/ament_cmake_pytest/test_broker/.cache --junit-xml=/ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml --junit-prefix=cslam
+
+============================= test session starts ==============================
+platform linux -- Python 3.8.10, pytest-4.6.9, py-1.8.1, pluggy-0.13.0
+cachedir: /ws_code/build/cslam/ament_cmake_pytest/test_broker/.cache
+rootdir: /ws_code/src/src/cslam
+plugins: launch-testing-0.10.10, ament-xmllint-0.9.8, ament-copyright-0.9.8, launch-testing-ros-0.11.7, ament-pep257-0.9.8, ament-lint-0.9.8, ament-flake8-0.9.8, anyio-4.4.0, colcon-core-0.12.1
+collected 0 items / 1 errors
+
+==================================== ERRORS ====================================
+________________________ ERROR collecting test session _________________________
+/usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:83: in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+/usr/lib/python3/dist-packages/_pytest/python.py:187: in pytest_collect_file
+    return ihook.pytest_pycollect_makemodule(path=path, parent=parent)
+/usr/lib/python3/dist-packages/pluggy/hooks.py:286: in __call__
+    return self._hookexec(self, self.get_hookimpls(), kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:92: in _hookexec
+    return self._inner_hookexec(hook, methods, kwargs)
+/usr/lib/python3/dist-packages/pluggy/manager.py:83: in <lambda>
+    self._inner_hookexec = lambda hook, methods, kwargs: hook.multicall(
+/opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:188: in pytest_pycollect_makemodule
+    entrypoint = find_launch_test_entrypoint(path)
+/opt/ros/foxy/lib/python3.8/site-packages/launch_testing/pytest/hooks.py:181: in find_launch_test_entrypoint
+    module = path.pyimport()
+/usr/lib/python3/dist-packages/py/_path/local.py:701: in pyimport
+    __import__(modname)
+/usr/lib/python3/dist-packages/_pytest/assertion/rewrite.py:304: in load_module
+    exec(co, mod.__dict__)
+tests/test_broker.py:3: in <module>
+    from cslam.broker import Broker
+cslam/broker.py:2: in <module>
+    from cslam.algebraic_connectivity_maximization import EdgeInterRobot
+cslam/algebraic_connectivity_maximization.py:5: in <module>
+    from cslam.mac.mac import MAC
+cslam/mac/mac.py:13: in <module>
+    from cslam.mac.utils import *
+cslam/mac/utils.py:9: in <module>
+    import numba
+/usr/local/lib/python3.8/dist-packages/numba/__init__.py:55: in <module>
+    _ensure_critical_deps()
+/usr/local/lib/python3.8/dist-packages/numba/__init__.py:40: in _ensure_critical_deps
+    raise ImportError(msg)
+E   ImportError: Numba needs NumPy 1.22 or greater. Got NumPy 1.17.
+=============================== warnings summary ===============================
+/usr/local/lib/python3.8/dist-packages/scipy/__init__.py:143
+  Warning: A NumPy version >=1.19.5 and <1.27.0 is required for this version of SciPy (detected version 1.17.4)
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+- generated xml file: /ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml -
+!!!!!!!!!!!!!!!!!!! Interrupted: 1 errors during collection !!!!!!!!!!!!!!!!!!!!
+===================== 1 warnings, 1 error in 0.32 seconds ======================
+
+
+-- run_test.py: return code 2
+-- run_test.py: verify result file '/ws_code/build/cslam/test_results/cslam/test_broker.xunit.xml'

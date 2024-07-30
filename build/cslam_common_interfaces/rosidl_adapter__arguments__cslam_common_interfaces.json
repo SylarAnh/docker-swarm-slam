@@ -1,0 +1,28 @@
+{
+  "package_name": "cslam_common_interfaces",
+  "non_idl_tuples": [
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/KeyframeRGB.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/KeyframeOdom.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/KeyframePointCloud.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/VizPointCloud.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/OptimizationResult.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/MultiRobotKey.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/PoseGraphEdge.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/PoseGraphValue.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/PoseGraph.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/RobotIds.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/RobotIdsAndOrigin.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/ReferenceFrames.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/OptimizerState.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/GlobalDescriptor.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/GlobalDescriptors.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/LocalImageDescriptors.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/LocalPointCloudDescriptors.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/InterRobotLoopClosure.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/IntraRobotLoopClosure.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/LocalDescriptorsRequest.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/LocalKeyframeMatch.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/InterRobotMatch.msg",
+    "/ws_code/src/src/cslam_interfaces/cslam_common_interfaces:msg/InterRobotMatches.msg"
+  ]
+}
