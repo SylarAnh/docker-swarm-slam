@@ -26,7 +26,7 @@ RUN cd /3rd_party/TEASER-plusplus/build && cmake -DTEASERPP_PYTHON_VERSION=3.8 .
 
 RUN pip install --upgrade numpy
 
-COPY Swarm-SLAM /ws_code/src/
+# COPY Swarm-SLAM /ws_code/src/
 # RUN /bin/bash -c "source /opt/ros/foxy/setup.bash" && cd /ws_code && colcon build --symlink-install
 
 RUN echo "alias srcd='. install/setup.bash'" >> /root/.bashrc

@@ -15,6 +15,7 @@ services:
     volumes:
       - ./build/:/ws_code/build/
       - ./install/:/ws_code/install/
+      - ./Swarm-SLAM/:/ws_code/src/Swarm-SLAM/
       - ./start_swarm-slam.sh:/script/start_swarm-slam.sh
       - /home/jcwang/dataset/:/dataset/
       - /tmp/.X11-unix:/tmp/.X11-unix
